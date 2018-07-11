@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <title>Pistol Perp</title>
+
+    <!-- *** FAVICON IS NOT WORKING *** -->
+    <link rel="icon" ng-href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" ng-href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bower Components -->
+  <!--   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script> -->
+    <script type="text/javaScript" src="/assets/bower_components/angular/angular.js"></script>
+    <script type="text/javaScript" src="/assets/bower_components/angular-route/angular-route.js"></script>
+    <!-- <script type="text/javaScript" src="/bower_components/angular-route/angular-route.js"></script> -->
+    <script type="text/javaScript" src="/assets/bower_components/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <!-- <script type="text/javaScript" src="/bower_components/ng-file-upload/ng-file-upload-shim.js"></script> -->
+
+    <!-- Nav Bar Code -->
+    <!-- <script type="text/javascript" src="/js/nav.js" ></script> -->
+
+
+
+    <!-- App -->
+    <script type="text/javaScript" src="/assets/app.js"></script>
+    <!-- Controllers -->
+    <script type="text/javaScript" src="/assets/controllers/smokeController.js"></script>
+    <!-- Factories -->
+    <script type="text/javaScript" src="/assets/factories/songFactory.js"></script>
+
+ 
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHt2XofXYe52MXTfA3rqgsP0EDVBTGpEg&libraries=places"></script>
+    <!-- Google Maps -->
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Scope+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Megrim' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Oswald|Saira+Semi+Condensed" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
+
+    <!-- Vex modal library links -->
+    <!-- <script src="/vexjq/vex.combined.js"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-wireframe'</script>
+    <link rel="stylesheet" href="/vexjq/vex.css">
+    <link rel="stylesheet" href="/vexjq/vex-theme-wireframe.css"> -->
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/dist/Icons/HTML_CSS/16/style.css"> -->
+
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCHt2XofXYe52MXTfA3rqgsP0EDVBTGpEg&libraries=places"></script>
+
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+  </head>
+  <body>
+    <!-- <ul ng-if='errors.length > 0'>
+		    <li ng-repeat='error in errors'>{{error}}</li>
+	</ul> -->
+        <!-- Nav Bar -->
+         
+            <!-- <a class="mobile" href="">&#9776;</a> -->
+            <div class="main">
+            <nav class="main_nav">
+              <ul id="nav">
+                <li><a href="/"><div id="logo"></div></a></li>
+                <li><a href="#/tracks">TRACKS</a></li>
+                <li><a href="#/tour">MEDIA</a></li>
+                <li><a href="#/">UNRELEASED</a></li>
+                <!-- <li><a href="#/deals">DEALS</a></li> -->
+                <li><a href="#/login">LOGIN</a></li>
+                <li>
+                    <a href="">JOIN</a>
+                    <ul>
+                        <li><a href="#/register/user">USER</a></li>
+                    </ul>
+                </li>
+              <!--   <li ng-show="UserService.name" class="ng-hide">
+                    <a href="">{{UserService.name | uppercase}}</a>
+                    <ul>
+                        <li ng-show="UserService.type == 'user'" class="ng-hide"><a href="#/user/{{UserService.name}}">SETTINGS</a></li>
+                        <li ng-show="UserService.type == 'Delivery' || UserService.type == 'Dispensary' || UserService.type == 'Doctor'" class="ng-hide"><a href="#/success">SETTINGS</a></li>
+                        <li><a ng-click="logout()">LOGOUT</a></li>
+                    </ul>
+                </li> -->
+              </ul>
+              <!-- <div style="clear:both;"></div> -->
+            </nav>
+        </div>    
+         <!-- END Nav Bar -->
+        <!-- Partial -->
+        <div class="partial-container" ng-view=""></div>
+        <!-- END Partial -->
+        <footer>
+                &copy; PISTOL PERP GANG 2018
+        </footer>
+  </body>
+</html>
