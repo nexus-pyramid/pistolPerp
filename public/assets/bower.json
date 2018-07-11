@@ -5,8 +5,7 @@
   "main": "",
   "ignore": [],
   "dependencies": {
-    "angular": "^1.7.2",
-    "angular-route": "~1.6.3",
-    "toastr": "^2.1.1"
+    "angular": "^1.6.10",
+    "angular-route": "~1.6.10"
   }
 }

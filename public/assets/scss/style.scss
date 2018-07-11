@@ -1,8 +1,8 @@
 @import  'breakpoint';
 $link-vertical-padding:20px;      /*Controls Menu top & bottom padding*/
-$link-horizontal-padding:25px; 
+$link-horizontal-padding:25px;
 $link-color: #AD1457;
-  
+
 $menu-background: #353535;        /*Control Menu Color Scheme*/
 $link-hover:#f7b465;
  html, body {
@@ -19,19 +19,22 @@ $link-hover:#f7b465;
  		video {
     background-color: black;
 		width: 100vw;
-    height: 100vh;			
+    height: 100vh;
 		}
 }
 footer {
   background-color: #AD1457;
+  font-family: 'Black Ops One', cursive;
+
 }
 nav {
-  font-family: 'iglesia';
-  src: url('Iglesia.ttf');
-  backgtextround-color: #AD1457;
-position: fixed;	// -align: right;
+  // font-family: 'iglesia';
+  // src: url('Iglesia.ttf');
+  font-family: 'Black Ops One', cursive;
+  background-color: #AD1457;
+  position: fixed;	// -align: right;
   width:100%;
-  height: 75px; 
+  height: 75px;
   margin-bottom: 73px;
   // background: linear-gradient(to bottom, $menu-background 0%, darken($menu-background,7%) 100%);
   // box-shadow:0px 2px 2px rgba(0,0,0,.35);
@@ -49,6 +52,8 @@ position: fixed;	// -align: right;
     justify-content: center;
     align-items:center;
         text-align: right;
+        font-family: 'Black Ops One', cursive;
+
   @include breakpoint(715) {
     display: block;
   }
@@ -57,9 +62,10 @@ position: fixed;	// -align: right;
 nav ul {
 	   list-style-position: inside;
 	 background-color: #AD1457;
-
-  font-family: 'iglesia';
-  src: url('Iglesia.ttf');     
+  //
+  // font-family: 'iglesia';
+  // src: url('Iglesia.ttf');
+  font-family: 'Black Ops One', cursive;
     margin:0;
   width:100%;
   list-style:none;
@@ -71,7 +77,7 @@ color: black;
       width:100%;
       // box-shadow:0px 1px 3px rgba(0,0,0,.7);
       // z-index:15;
-    } 
+    }
   img {
     background: black;
   }
@@ -88,7 +94,7 @@ color: black;
       position:relative;
       margin:0;
     }
-    
+
     a {
       height: 100%;
       display:table-cell;
@@ -101,12 +107,14 @@ color: black;
       background-color: #AD1457;
 
       text-decoration:none;
-        font-family: 'iglesia';
-  src: url('Iglesia.ttf');
+  //       font-family: 'iglesia';
+  // src: url('Iglesia.ttf');
+  font-family: 'Black Ops One', cursive;
+
       // border-right:1px solid darken($menu-background,10%);
       // text-shadow:2px 2px 2px rgba(0,0,0,.8);
       transition: all 0.1s ease;
-      
+
       &:hover {
         background: white;
         color: black;
@@ -117,28 +125,29 @@ color: black;
         display:table;
         margin:0;
          padding:15px 2px;
-        color:white;
+        background-color: #AD1457;
+        color: black;
         // border-top:1px solid rgba(0,0,0,.15);
         // box-shadow:inset 0px 1px 3px rgba(255,255,255,.03);
         text-shadow:none;
         width:100%;
       }
     }
-    
+
     &:hover ul {
       opacity:1;
       max-height:1000px;
       transition: all 0.3s ease;
-      
+
       @include breakpoint(715) {
         max-height:0;
-      } 
+      }
     }
-    
+
     /******************
     SUBNAV
     ******************/
-    
+
     ul {
       background:darken($menu-background,10%);
       list-style:none;
@@ -152,7 +161,7 @@ color: black;
       font-size:.9em;
       // box-shadow:0px 2px 2px rgba(0,0,0,.5);
       transition: all 0.3s ease;
-      
+
       @include breakpoint(715) {
         // max-height:0;
         opacity:1;
@@ -162,16 +171,19 @@ color: black;
         // box-shadow:inset 0px 2px 2px rgba(0,0,0,.5);
         transition: all 2s ease;
       }
-      
+
       li {
         float:none;
         margin:0;
+        font-family: 'Black Ops One', cursive;
 
         @include breakpoint(715) {
           margin:0;
+          height: 40px;
         }
-        
+
         a {
+          font-family: 'Black Ops One', cursive;
           display:block;
           text-align:left;
           padding: $link-vertical-padding/1.5 $link-horizontal-padding/1.5;
@@ -182,7 +194,7 @@ color: black;
           text-transform:none;
           text-shadow:none;
           transition: all 0.2s ease;
-          
+
           &:hover {
             color:$link-hover;
             background:lighten($menu-background,5%);
@@ -190,12 +202,20 @@ color: black;
           }
 
           @include breakpoint(715) {
-            color:white;
+            // color:white;
             padding-left:20px;
-             background:none;
+             // background:none;
+            background-color: #AD1457;
+            color: black;
+            height: 40px;
           }
         }
       }
     }
   }
+}
+.main_nav {
+  background-color: #AD1457;
+  font-family: 'Black Ops One', cursive;
+
 }
