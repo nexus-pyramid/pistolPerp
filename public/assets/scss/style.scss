@@ -1,221 +1,149 @@
 @import  'breakpoint';
-$link-vertical-padding:20px;      /*Controls Menu top & bottom padding*/
-$link-horizontal-padding:25px;
-$link-color: #AD1457;
+@import  'sheets';
+@import  'nav';
+
+$link-vertical-padding: 20px;      /*Controls Menu top & bottom padding*/
+$link-horizontal-padding: 25px;
+$link-color: rgba(0,0,0,.9);;
+$logo-width: 125;
+$logo-height: 120;
 
 $menu-background: #353535;        /*Control Menu Color Scheme*/
-$link-hover:#f7b465;
+  @font-face {
+    font-family: WISHFULWAVES;
+    src: url(WISHFULWAVES.ttf); 
+  }
  html, body {
 	margin: 0px;
 	padding: 0px;
-	overflow-x:hidden;
-  width: 100%;
+// overflow-x: hidden;
+  // width: 100%;
   height: 100%;
+  overflow-y: scroll;
+  // background-color: rgba(12, 4, 21, 0.7);
+  // background-color: rgba(96,66,126, 0.7);
+}
+h1 {
+  display: inline-block; 
+position: relative; 
+padding: 0 .2em; 
+white-space: nowrap; 
+color: red;
+}
+
+h1 div {
+position: absolute; 
+top: 0; left: 0; 
+padding: inherit; 
+font: inherit; 
+white-space: inherit; 
+background: black; 
+animation-name: bravo; 
+animation-duration: 1000ms; 
+animation-iteration-count: infinite; 
+animation-direction: alternate; 
+animation-timing-function: ease-in-out; 
+    font-family: WISHFULWAVES;
+font-size: 115px;
+width: 500px;
+text-align: center;
+display: table-cell;
+vertical-align: middle;
+             background-color: rgba(0,0,0,.8);
+}
+
+@keyframes bravo {
+  from {top: 0px; }
+  to {top: 10px; }
+}
+
+video {
+ //    position: relative;
+ //    top: 0px;
+ //    left: 0px;
+ //  height: 70vh;
+ //  width: 100%;
+ // // position: fixed;
+ //   // top: 50%; left: 50%;
+ //  z-index: -1;
+ //  // min-width: 100%;
+ //  // min-height: 100%;
+ //  // width: 100%;
+ //  // width: auto;
+ //  // height: auto;
+ //  // height: 100vh;
+ //  // transform: translate(-50%, -50%);
+ //  display: block;
+  //  margin: 0;
+  // padding: 0;
+  position: fixed;
+  right: 0; 
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+}
+Controls {
+  z-index: 3;
 }
 .vidContainer {
   margin-top: 75px;
 	// height: 100%;
 	// width: 100%;
- 		video {
-    background-color: black;
-		width: 100vw;
-    height: 100vh;
-		}
+ 	// 	video {
+  //   background-color: black;
+		// width: 100vw;
+  //   height: 100vh;
+  //   display: block;
+		// }
 }
 footer {
-  background-color: #AD1457;
-  font-family: 'Black Ops One', cursive;
-
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'K2D', sans-serif;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
 }
-nav {
-  // font-family: 'iglesia';
-  // src: url('Iglesia.ttf');
-  font-family: 'Black Ops One', cursive;
-  background-color: #AD1457;
-  position: fixed;	// -align: right;
-  width:100%;
-  height: 75px;
-  margin-bottom: 73px;
-  // background: linear-gradient(to bottom, $menu-background 0%, darken($menu-background,7%) 100%);
-  // box-shadow:0px 2px 2px rgba(0,0,0,.35);
-
-  @include breakpoint(715) {
-    margin:65px 0 0 0;
-    max-height:0;
-    overflow:hidden;
-    transition: all 0.5s ease;
-    // background:darken(#262626,5%);
-  }
+.mainInfoImage {
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+     // min-height: 60vh;
+     // height: 400px;
+    background-image: url("/assets/pics/bw_darkwoods.png");
 }
-#navmainlist {
-    display: flex;
-    justify-content: center;
-    align-items:center;
-        text-align: right;
-        font-family: 'Black Ops One', cursive;
-
-  @include breakpoint(715) {
-    display: block;
-  }
-
+.bs {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+font-color: red;
 }
-nav ul {
-	   list-style-position: inside;
-	 background-color: #AD1457;
-  //
-  // font-family: 'iglesia';
-  // src: url('Iglesia.ttf');
-  font-family: 'Black Ops One', cursive;
-    margin:0;
-  width:100%;
-  list-style:none;
-      text-align: right;
-color: black;
-   @include breakpoint(715) {
-      margin:0;
-      padding:0;
-      width:100%;
-      // box-shadow:0px 1px 3px rgba(0,0,0,.7);
-      // z-index:15;
-    }
-  img {
-    background: black;
-  }
-  li {
-    display: table;
-  	height: 74px;
-    float:left;
-    position:relative;
-    z-index:1;
-    text-align: right;
-    vertical-align: middle;
+.fulljit {
+  width: 830px;
+font-color: red;
+  letter-spacing: 6px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: center;
+background-color: purple;
+}
+#logo {
+      background-image: url("/assets/pics/NEWWOADIE.png");
+ background-repeat: no-repeat;
+  background-position: center center;
+   margin: 0 auto;
+  background-size: cover;
+  width:$logo-width * 1px;
+  height:$logo-height * 1px;
+  padding: 0;
+  background-color:#7f8c8d;
     @include breakpoint(715) {
-      float:none;
-      position:relative;
-      margin:0;
-    }
-
-    a {
-      height: 100%;
-      display:table-cell;
-      vertical-align: middle;
-      text-align: center;
-      padding: 0px $link-horizontal-padding;
-      text-align:center;
-      // color:$link-color;
-      color: black;
-      background-color: #AD1457;
-
-      text-decoration:none;
-  //       font-family: 'iglesia';
-  // src: url('Iglesia.ttf');
-  font-family: 'Black Ops One', cursive;
-
-      // border-right:1px solid darken($menu-background,10%);
-      // text-shadow:2px 2px 2px rgba(0,0,0,.8);
-      transition: all 0.1s ease;
-
-      &:hover {
-        background: white;
-        color: black;
-        transition: all 0.2s ease;
-      }
-
-      @include breakpoint(715) {
-        display:table;
-        margin:0;
-         padding:15px 2px;
-        background-color: #AD1457;
-        color: black;
-        // border-top:1px solid rgba(0,0,0,.15);
-        // box-shadow:inset 0px 1px 3px rgba(255,255,255,.03);
-        text-shadow:none;
-        width:100%;
-      }
-    }
-
-    &:hover ul {
-      opacity:1;
-      max-height:1000px;
-      transition: all 0.3s ease;
-
-      @include breakpoint(715) {
-        max-height:0;
-      }
-    }
-
-    /******************
-    SUBNAV
-    ******************/
-
-    ul {
-      background:darken($menu-background,10%);
-      list-style:none;
-      padding:0;
-      position:absolute;
-      width:200px;
-      max-height:0;
-      z-index:0;
-      opacity:0;
-      overflow:hidden;
-      font-size:.9em;
-      // box-shadow:0px 2px 2px rgba(0,0,0,.5);
-      transition: all 0.3s ease;
-
-      @include breakpoint(715) {
-        // max-height:0;
-        opacity:1;
-        width:100%;
-        position:relative;
-        overflow:hidden;
-        // box-shadow:inset 0px 2px 2px rgba(0,0,0,.5);
-        transition: all 2s ease;
-      }
-
-      li {
-        float:none;
-        margin:0;
-        font-family: 'Black Ops One', cursive;
-
-        @include breakpoint(715) {
-          margin:0;
-          height: 40px;
-        }
-
-        a {
-          font-family: 'Black Ops One', cursive;
-          display:block;
-          text-align:left;
-          padding: $link-vertical-padding/1.5 $link-horizontal-padding/1.5;
-          margin:0;
-          border-right:none;
-          // border-top:1px solid darken($menu-background,12%);
-          // box-shadow:inset 0px 1px 3px rgba(255,255,255,.03);
-          text-transform:none;
-          text-shadow:none;
-          transition: all 0.2s ease;
-
-          &:hover {
-            color:$link-hover;
-            background:lighten($menu-background,5%);
-            transition: all 0.5s ease;
-          }
-
-          @include breakpoint(715) {
-            // color:white;
-            padding-left:20px;
-             // background:none;
-            background-color: #AD1457;
-            color: black;
-            height: 40px;
-          }
-        }
-      }
-    }
+    width: 80px;
+    height:50px;
   }
-}
-.main_nav {
-  background-color: #AD1457;
-  font-family: 'Black Ops One', cursive;
-
 }

@@ -1,0 +1,209 @@
+/*********************
+RESPONSIVE BREAKPOINTS
+**********************/
+[class*=sheet__] {
+  width: 100%;
+  padding: 0 0;
+  background-color: #F2F5F5;
+}
+
+.sheet__tracks {
+  height: 60vh;
+}
+
+/*Controls Menu top & bottom padding*/
+/*Control Menu Color Scheme*/
+html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.vidContainer {
+  margin-top: 75px;
+}
+.vidContainer video {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+footer {
+  background-color: #606060;
+  font-family: "K2D", sans-serif;
+}
+
+nav {
+  font-family: "K2D", sans-serif;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  margin-bottom: 73px;
+}
+@media (max-width: 715px) {
+  nav {
+    margin: 65px 0 0 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+  }
+}
+
+#navmainlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  font-family: "K2D", sans-serif;
+}
+@media (max-width: 715px) {
+  #navmainlist {
+    display: block;
+  }
+}
+
+nav ul {
+  list-style-position: inside;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "K2D", sans-serif;
+  margin: 0;
+  width: 100%;
+  list-style: none;
+  text-align: right;
+  color: black;
+}
+@media (max-width: 715px) {
+  nav ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+nav ul img {
+  background: black;
+}
+nav ul li {
+  display: table;
+  height: 74px;
+  float: left;
+  position: relative;
+  z-index: 1;
+  text-align: right;
+  vertical-align: middle;
+  /******************
+  SUBNAV
+  ******************/
+}
+@media (max-width: 715px) {
+  nav ul li {
+    float: none;
+    position: relative;
+    margin: 0;
+  }
+}
+nav ul li a {
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding: 0px 25px;
+  text-align: center;
+  color: black;
+  font-size: 30px;
+  text-decoration: none;
+  font-family: "K2D", sans-serif;
+  transition: all 0.1s ease;
+}
+nav ul li a:hover {
+  background: white;
+  color: black;
+  transition: all 0.2s ease;
+}
+@media (max-width: 715px) {
+  nav ul li a {
+    display: table;
+    margin: 0;
+    padding: 15px 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    text-shadow: none;
+    width: 100%;
+  }
+}
+nav ul li:hover ul {
+  opacity: 1;
+  max-height: 1000px;
+  transition: all 0.3s ease;
+}
+@media (max-width: 715px) {
+  nav ul li:hover ul {
+    max-height: 0;
+  }
+}
+nav ul li ul {
+  background: #1c1c1c;
+  list-style: none;
+  padding: 0;
+  position: absolute;
+  width: 200px;
+  max-height: 0;
+  z-index: 0;
+  opacity: 0;
+  overflow: hidden;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+}
+@media (max-width: 715px) {
+  nav ul li ul {
+    opacity: 1;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    transition: all 2s ease;
+  }
+}
+nav ul li ul li {
+  float: none;
+  margin: 0;
+  font-family: "K2D", sans-serif;
+}
+@media (max-width: 715px) {
+  nav ul li ul li {
+    margin: 0;
+    height: 40px;
+  }
+}
+nav ul li ul li a {
+  font-family: "K2D", sans-serif;
+  display: block;
+  text-align: left;
+  padding: 13.3333333333px 16.6666666667px;
+  margin: 0;
+  border-right: none;
+  text-transform: none;
+  text-shadow: none;
+  transition: all 0.2s ease;
+}
+nav ul li ul li a:hover {
+  color: #f7b465;
+  background: #424242;
+  transition: all 0.5s ease;
+}
+@media (max-width: 715px) {
+  nav ul li ul li a {
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+    height: 40px;
+  }
+}
+
+.main_nav {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: "K2D", sans-serif;
+}
+
+/*# sourceMappingURL=css.map */

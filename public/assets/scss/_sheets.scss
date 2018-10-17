@@ -1,0 +1,69 @@
+[class*="sheet__"]{
+	width:100%;
+	padding:0 0;
+	background-color: #F2F5F5;
+}
+
+.sheet__tracks {
+	height: 60vh;
+}
+.sheet__vidContainer {
+ // position: relative;
+ // top: 0px;
+    // left: 0px;
+
+    // height: 70vh;
+    // height: auto;
+    // text-align: center;
+    // display: table;
+    // vertical-align: middle;
+        position: relative;
+    top: 0px;
+    left: 0px;
+    height: 70vh;
+    background-color: transparent;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+.sheet__mainInfo {
+    // min-height: 60vh;
+    // height: 350px;
+    // height: 300px;
+    // min-width:  100vw;
+    // top: 0;
+    // position: relative;
+}
+.sheet__mainInfoImage {
+	background-color: transparent;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    display: inline;
+    min-width: 100vw;
+     // 60vh;
+}
+
+.sheet__dashboard {
+        // position: relative;
+    width: 1000px;
+    top: 0px;
+    left: 0px;
+    height: 70vh;
+    text-align:center;
+    display: table;
+    vertical-align: middle;
+    // z-index: -1;
+    background-color: transparent;
+        /* fix background */
+     background-attachment: fixed;
+    /* center it */
+    background-position: center center;
+    /* Scale it nicely to the element */
+    background-size: cover;
+    // background-image: url("assets/pics/tampa.jpg");
+    h3 {
+        vertical-align: middle;
+        margin-top: 0;
+    }
+}
