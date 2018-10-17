@@ -1,12 +1,12 @@
 {
-  "name": "pistolperp",
+  "name": "DEADJITPERP",
   "version": "1.0",
   "license": "",
   "main": "",
   "ignore": [],
   "dependencies": {
-    "angular": "^1.7.2",
+    "angular": "^1.6.1",
     "angular-route": "~1.6.3",
-    "toastr": "^2.1.1"
+    "jquery": "^3.2.1"
   }
 }
